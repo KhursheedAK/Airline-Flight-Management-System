@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminReschedulesFlightController">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="393.0" prefWidth="552.0">
+         <children>
+            <AnchorPane prefHeight="672.0" prefWidth="865.0" style="-fx-background-color: Aliceblue;">
+               <children>
+                  <ImageView fx:id="flight_Image" fitHeight="206.0" fitWidth="208.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="file:/C:/Users/survi/Desktop/Java%20Codes/AirlineProjectGUI/src/16.png" />
+                     </image>
+                  </ImageView>
+                  <VBox layoutX="259.0" layoutY="58.0" prefHeight="40.0" prefWidth="595.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Flight Code:" wrappingWidth="164.13671875">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="enter_Flight_Code_Text_Field" />
+                     </children>
+                  </VBox>
+                  <Text layoutX="349.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin: Reschedule Flight Menu" wrappingWidth="286.0">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                  </Text>
+                  <TextArea fx:id="flight_Information_Text_Area" layoutX="259.0" layoutY="156.0" prefHeight="172.0" prefWidth="595.0" />
+                  <Text layoutX="259.0" layoutY="147.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flight Information:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <VBox layoutX="259.0" layoutY="497.0" prefHeight="45.0" prefWidth="595.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a New Date:" wrappingWidth="146.13671875">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="date_Picker_Text_Field" />
+                     </children>
+                  </VBox>
+                  <Text layoutX="259.0" layoutY="356.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Reschedule Reason:">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <TextArea fx:id="enter_Reschedule_Reason_Text_Area" layoutX="259.0" layoutY="360.0" prefHeight="123.0" prefWidth="595.0" />
+                  <Button fx:id="confirm_Reschedule" layoutX="384.0" layoutY="594.0" mnemonicParsing="false" onAction="#confirmReschedule" text="Confirm Reschedule">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancel_Reschedule" layoutX="626.0" layoutY="594.0" mnemonicParsing="false" onAction="#cancelReschedule" text="Cancel Reschedule">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancel_Ticket" layoutX="31.0" layoutY="205.0" mnemonicParsing="false" onAction="#goToAdminCancelsTicket" prefHeight="61.0" prefWidth="175.0" text="Cancel Ticket">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="cancel_Flight" layoutX="31.0" layoutY="321.0" mnemonicParsing="false" onAction="#goToAdminCancelsFlight" prefHeight="61.0" prefWidth="175.0" text="Cancel Flight">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="search_Flight" layoutX="741.0" layoutY="112.0" mnemonicParsing="false" onAction="#searchFlight" text="Search Flight">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="back" layoutX="782.0" layoutY="9.0" mnemonicParsing="false" onAction="#goToAdminMode" text="&lt;- Back">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="add_Passenger" layoutX="31.0" layoutY="436.0" mnemonicParsing="false" onAction="#goToAdminAddsPassenger" prefHeight="61.0" prefWidth="175.0" text="Add Passengers">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="admin_Menu" layoutX="31.0" layoutY="564.0" mnemonicParsing="false" onAction="#goToAdminMode" prefHeight="61.0" prefWidth="175.0" text="Back to Menu">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

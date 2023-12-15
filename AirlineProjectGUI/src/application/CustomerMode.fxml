@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="200.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerModeController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="1080.0" style="-fx-background-color: Aliceblue;">
+         <children>
+            <ImageView fx:id="customer_Image" fitHeight="150.0" fitWidth="200.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/survi/Desktop/Java%20Codes/AirlineProjectGUI/src/2.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="504.0" layoutY="32.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer Mode" wrappingWidth="158.13671875">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="rescheduleTicket" layoutX="194.0" layoutY="57.0" mnemonicParsing="false" onAction="#goToCustomerReschedulesTicket" prefHeight="65.0" prefWidth="125.0" style="-fx-border-color: Green;" text="Reschedule Ticket">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="checkAvailableFlights" layoutX="354.0" layoutY="57.0" mnemonicParsing="false" onAction="#goToCustomerChecksAvailableFlights" prefHeight="65.0" prefWidth="150.0" style="-fx-border-color: Green;" text="Check Available Flights">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="checkFlightStatus" layoutX="537.0" layoutY="57.0" mnemonicParsing="false" onAction="#goToCustomerChecksFlightStatus" prefHeight="65.0" prefWidth="150.0" style="-fx-border-color: Green;" text="Check Flight Status">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="homeMenu" layoutX="920.0" layoutY="149.0" mnemonicParsing="false" onAction="#goToHomeMenu" prefHeight="31.0" prefWidth="131.0" style="-fx-border-color: Green;" text="Go back to Home">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+            <Button fx:id="reserveSeat" layoutX="724.0" layoutY="57.0" mnemonicParsing="false" onAction="#goToCustomerReservesSeat" prefHeight="65.0" prefWidth="158.0" style="-fx-border-color: Green;" text="Reserve Seat">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelTicket" layoutX="920.0" layoutY="57.0" mnemonicParsing="false" onAction="#goToCustomerCancelsTicket" prefHeight="65.0" prefWidth="131.0" style="-fx-border-color: Green;" text="Cancel Ticket">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

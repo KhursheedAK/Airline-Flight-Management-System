@@ -1,0 +1,4 @@
+1 Islamabad Lahore 4hours 12000 49000
+2 Karachi Lahore 10hours 20000 51000
+4 Islamabad Belgium 16hours 75000 10939
+5 Lahore Japan 23hours 200000 200000

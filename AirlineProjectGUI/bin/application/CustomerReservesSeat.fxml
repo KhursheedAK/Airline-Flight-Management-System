@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="915.0" prefWidth="1174.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerReservesSeat">
+   <children>
+      <AnchorPane prefHeight="915.0" prefWidth="1174.0" style="-fx-background-color: Aliceblue;">
+         <children>
+            <ImageView fx:id="booking_Image" fitHeight="222.0" fitWidth="228.0" layoutX="7.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/survi/Desktop/Java%20Codes/AirlineProjectGUI/bin/6.png" />
+               </image>
+            </ImageView>
+            <VBox layoutX="274.0" layoutY="245.0" prefHeight="128.0" prefWidth="567.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Departure Airport:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="enter_Departure_Airport_Text_Field" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Arrival Airport:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="enter_Arrival_Airport_Text_Field" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter a Date:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="date_Pick_Text_Field" />
+               </children>
+            </VBox>
+            <Text layoutX="478.0" layoutY="22.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Reserve a Seat">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+            <Button fx:id="search_Button" layoutX="867.0" layoutY="369.0" mnemonicParsing="false" onAction="#searchFlight" text="Search">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="flight_Information_Text_Area" layoutX="307.0" layoutY="468.0" prefHeight="207.0" prefWidth="513.0" />
+            <Text layoutX="489.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flights Information">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <Text layoutX="845.0" layoutY="485.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter ID number to select flight:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="enter_ID_to_Select_Flight_Text_field" layoutX="841.0" layoutY="503.0" prefHeight="31.0" prefWidth="148.0" />
+            <Text layoutX="845.0" layoutY="567.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Quantity of Seats:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="enter_Quantity_of_Seats_Text_Field" layoutX="845.0" layoutY="575.0" prefHeight="31.0" prefWidth="178.0" />
+            <Button fx:id="view_Fare_Button" layoutX="847.0" layoutY="622.0" mnemonicParsing="false" onAction="#confirmToViewFare" prefHeight="37.0" prefWidth="148.0" text="Confirm to View Fare">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <TextArea fx:id="fare_Information_Text_Area" layoutX="301.0" layoutY="714.0" prefHeight="154.0" prefWidth="520.0" />
+            <Text layoutX="498.0" layoutY="710.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fare Information">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="confrim_Button" layoutX="839.0" layoutY="718.0" mnemonicParsing="false" onAction="#confirmReservation" text="Confrim Reservation">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancel_Button" layoutX="1023.0" layoutY="714.0" mnemonicParsing="false" onAction="#cancelReservation" text="Cancel">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="rescheduleTicket" layoutX="14.0" layoutY="256.0" mnemonicParsing="false" onAction="#goToCustomerReschedulesTicket" prefHeight="113.0" prefWidth="212.0" text="Reschedule Ticket">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkAvailableFlights" layoutX="14.0" layoutY="389.0" mnemonicParsing="false" onAction="#goToCustomerChecksAvailableFlights" prefHeight="113.0" prefWidth="212.0" text="Check Available Flights">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkFlightStatus" layoutX="12.0" layoutY="518.0" mnemonicParsing="false" onAction="#goToCustomerChecksFlightStatus" prefHeight="113.0" prefWidth="212.0" text="Check Flight Status">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="customerMenu" layoutX="12.0" layoutY="780.0" mnemonicParsing="false" onAction="#goToCustomerMode" prefHeight="113.0" prefWidth="212.0" text="Back to Menu">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <VBox layoutX="274.0" layoutY="32.0" prefHeight="180.0" prefWidth="567.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Name:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="enter_Name" />
+                  <Text fx:id="enter_Name_Text_Field" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter CNIC:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="enter_Cnic_Text_Field" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Phone:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="enter_Phone_Text_Field" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Gender:">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="enter_Gender_Text_Field" prefHeight="39.0" prefWidth="567.0" />
+               </children>
+            </VBox>
+            <Text layoutX="274.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="---------------------------------------------------------------------------------------------------" wrappingWidth="567.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="280.0" layoutY="425.0" strokeType="OUTSIDE" strokeWidth="0.0" text="----------------------------------------------------------------------------------------------------------------------------------------------" wrappingWidth="816.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text layoutX="278.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="----------------------------------------------------------------------------------------------------------------------------------------------" wrappingWidth="806.0">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Button fx:id="cancelTicket" layoutX="14.0" layoutY="647.0" mnemonicParsing="false" onAction="#goToCustomerCancelsTicket" prefHeight="113.0" prefWidth="212.0" text="Cancel Ticket">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Text layoutX="307.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flight Type:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="flight_Type_Text_Field" layoutX="397.0" layoutY="388.0" />
+            <Text layoutX="560.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Seat Type:">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="seat_Type_Text_Field" layoutX="646.0" layoutY="388.0" />
+            <Text layoutX="893.0" layoutY="101.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Booked Ticket ID And Booked Flight Code:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="booking_Information" layoutX="886.0" layoutY="115.0" prefHeight="94.0" prefWidth="274.0" />
+            <Button fx:id="back_to_Menu" layoutX="971.0" layoutY="233.0" mnemonicParsing="false" onAction="#goToCustomerMode" prefHeight="25.0" prefWidth="113.0" text="Back to Menu" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

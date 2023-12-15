@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="521.0" prefWidth="694.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerChecksAvailableFlightController">
+   <children>
+      <AnchorPane prefHeight="576.0" prefWidth="785.0" style="-fx-background-color: Aliceblue;">
+         <children>
+            <ImageView fx:id="aeroplane_Image" fitHeight="192.0" fitWidth="241.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/survi/Desktop/Java%20Codes/AirlineProjectGUI/src/4.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="393.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Available Flights">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Text layoutX="434.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Flight Details:" wrappingWidth="153.13671875">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="290.0" layoutY="187.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Departure Airport:" wrappingWidth="194.9677734375">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="enter_Departure_Airport_Text_Field" layoutX="285.0" layoutY="194.0" prefHeight="25.0" prefWidth="473.0" />
+            <Text layoutX="290.0" layoutY="247.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Arrival Airport:" wrappingWidth="194.9677734375">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <TextField fx:id="enter_Arrival_Airport_Text_Field" layoutX="285.0" layoutY="251.0" prefHeight="25.0" prefWidth="473.0" />
+            <Text layoutX="290.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Date:" wrappingWidth="86.9677734375">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Button fx:id="searchFlights_Button" layoutX="551.0" layoutY="309.0" mnemonicParsing="false" onAction="#searchFlights" prefHeight="35.0" prefWidth="74.0" text="Search">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="434.0" layoutY="384.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flights Information:" wrappingWidth="153.13671875">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="flights_Information_Text_Area" layoutX="270.0" layoutY="391.0" prefHeight="175.0" prefWidth="502.0" />
+            <Button fx:id="rescheduleTicket" layoutX="14.0" layoutY="230.0" mnemonicParsing="false" onAction="#goToCustomerReschedulesTicket" prefHeight="55.0" prefWidth="161.0" text="Reschedule Ticket">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkFlightStatus" layoutX="14.0" layoutY="299.0" mnemonicParsing="false" onAction="#goToCustomerChecksFlightStatus" prefHeight="55.0" prefWidth="161.0" text="Check Flight Status">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="customerMenu" layoutX="14.0" layoutY="507.0" mnemonicParsing="false" onAction="#goToCustomerMode" prefHeight="55.0" prefWidth="161.0" text="Back to Menu">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="back" layoutX="697.0" layoutY="8.0" mnemonicParsing="false" onAction="#goToCustomerMode" prefHeight="35.0" prefWidth="74.0" text="&lt;- Back">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="reserveSeat" layoutX="14.0" layoutY="367.0" mnemonicParsing="false" onAction="#goToCustomerReservesSeat" prefHeight="55.0" prefWidth="161.0" text="Reserve Seat">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="cancelTicket" layoutX="14.0" layoutY="433.0" mnemonicParsing="false" onAction="#goToCustomerCancelsTicket" prefHeight="55.0" prefWidth="161.0" text="Cancel Ticket">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <TextField fx:id="enter_Date_Menu" layoutX="290.0" layoutY="314.0" prefHeight="25.0" prefWidth="161.0" />
+            <Text layoutX="311.0" layoutY="74.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Flight Type:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="flight_Type" layoutX="313.0" layoutY="85.0" prefHeight="35.0" prefWidth="439.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

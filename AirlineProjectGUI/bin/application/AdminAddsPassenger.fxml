@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AdminAddsPassengerController">
+   <children>
+      <AnchorPane prefHeight="405.0" prefWidth="569.0">
+         <children>
+            <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="366.0" prefWidth="574.0">
+               <children>
+                  <AnchorPane layoutX="-14.0" layoutY="-14.0" prefHeight="405.0" prefWidth="588.0" style="-fx-background-color: AliceBlue;">
+                     <children>
+                        <Text layoutX="234.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Admin: Adding Passenger Menu">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Text>
+                        <ImageView fx:id="addImage" fitHeight="175.0" fitWidth="223.0" layoutX="27.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="file:/C:/Users/survi/Desktop/Java%20Codes/AirlineProjectGUI/src/17.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="admin_Menu" layoutX="27.0" layoutY="362.0" mnemonicParsing="false" onAction="#goToAdminMode" prefHeight="31.0" prefWidth="153.0" text="Back to Menu">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <VBox layoutX="234.0" layoutY="63.0" prefHeight="280.0" prefWidth="287.0">
+                           <children>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Name:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="enter_Name_Text_Field" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Password:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="enter_Password_Text_Field" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter CNIC:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="enter_Cnic_Text_Field" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Email:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="enter_Email_Text_Field" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Age:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="enter_Age_Text_Field" />
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Gender:">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="enter_Gender_Text_Field" />
+                           </children>
+                        </VBox>
+                        <Button fx:id="add_Button" layoutX="294.0" layoutY="347.0" mnemonicParsing="false" onAction="#goToAdd" text="Add">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="cancel_Button" layoutX="416.0" layoutY="347.0" mnemonicParsing="false" onAction="#goToCancel" text="Cancel">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="reschedule_Flight" layoutX="27.0" layoutY="220.0" mnemonicParsing="false" onAction="#goToAdminReschedulesFlight" prefHeight="31.0" prefWidth="153.0" text="Reschedule Flight">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="cancel_Flight" layoutX="27.0" layoutY="265.0" mnemonicParsing="false" onAction="#goToAdminCancelsFlight" prefHeight="31.0" prefWidth="153.0" text="Cancel Flight">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="cancel_Ticket" layoutX="27.0" layoutY="316.0" mnemonicParsing="false" onAction="#goToAdminCancelsTicket" prefHeight="31.0" prefWidth="153.0" text="Cancel Ticket">
+                           <font>
+                              <Font name="System Bold" size="15.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefWidth="752.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <children>
+      <AnchorPane layoutX="-8.0" prefHeight="180.0" prefWidth="752.0" style="-fx-background-color: Aliceblue;">
+         <children>
+            <ImageView fx:id="image1" fitHeight="231.0" fitWidth="232.0" layoutX="14.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="file:/C:/Users/survi/Desktop/Java%20Codes/AirlineProjectGUI/src/1.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="customerMode" layoutX="316.0" layoutY="92.0" mnemonicParsing="false" onAction="#goToCustomerLoginSignupMenu" prefHeight="55.0" prefWidth="138.0" style="-fx-border-color: Green;" text="Customer Mode" />
+            <Text layoutX="316.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to PAK Airline Management System" wrappingWidth="382.767578125">
+               <font>
+                  <Font name="Arial" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="adminMode" layoutX="561.0" layoutY="92.0" mnemonicParsing="false" onAction="#goToAdminMode" prefHeight="55.0" prefWidth="138.0" style="-fx-border-color: Blue;" text="Admin Mode" />
+            <Text layoutX="454.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home Menu">
+               <font>
+                  <Font name="Arial Bold" size="17.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

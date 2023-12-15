@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="580.0" prefWidth="849.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.CustomerChecksFlightStatusController">
+   <children>
+      <AnchorPane fx:id="text1" prefHeight="576.0" prefWidth="849.0" style="-fx-background-color: Aliceblue;">
+         <children>
+            <ImageView fx:id="plane_Image" fitHeight="205.0" fitWidth="244.0" layoutX="14.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="file:/C:/Users/survi/Desktop/Java%20Codes/AirlineProjectGUI/src/5.jpg" />
+               </image>
+            </ImageView>
+            <Text layoutX="478.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Check Flight Status">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="back" layoutX="764.0" layoutY="12.0" mnemonicParsing="false" onAction="#goToCustomerMode" prefHeight="27.0" prefWidth="71.0" text="&lt;- Back">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="rescheduleTicket" layoutX="23.0" layoutY="237.0" mnemonicParsing="false" onAction="#goToCustomerReschedulesTicket" prefHeight="44.0" prefWidth="189.0" text="Reschedule Ticket">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="checkAvailableFlights" layoutX="23.0" layoutY="302.0" mnemonicParsing="false" onAction="#goToCustomerChecksAvailableFlights" prefHeight="44.0" prefWidth="189.0" text="Check Available Flights">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="customerMenu" layoutX="23.0" layoutY="494.0" mnemonicParsing="false" onAction="#goToCustomerMode" prefHeight="44.0" prefWidth="189.0" text="Back to Menu">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="291.0" layoutY="70.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Enter Ticket ID:">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Text>
+            <TextField fx:id="enter_Ticket_ID_Text_Field" layoutX="291.0" layoutY="85.0" prefHeight="25.0" prefWidth="535.0" />
+            <Button fx:id="search" layoutX="755.0" layoutY="120.0" mnemonicParsing="false" onAction="#getStatusOfFlight" prefHeight="27.0" prefWidth="71.0" text="Search">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Text layoutX="482.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flights Information:" wrappingWidth="153.13671875">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <Text layoutX="291.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flight Status:" wrappingWidth="153.13671875">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="flight_Status_Text_Area" layoutX="291.0" layoutY="226.0" prefHeight="102.0" prefWidth="535.0" />
+            <Text layoutX="296.0" layoutY="353.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Flight Information:" wrappingWidth="153.13671875">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Text>
+            <TextArea fx:id="flight_Information_Text_Area" layoutX="296.0" layoutY="364.0" prefHeight="205.0" prefWidth="529.0" />
+            <Button fx:id="cancelTicket" layoutX="23.0" layoutY="423.0" mnemonicParsing="false" onAction="#goToCustomerCancelsTicket" prefHeight="44.0" prefWidth="189.0" text="Cancel Ticket">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="reserveSeat" layoutX="23.0" layoutY="357.0" mnemonicParsing="false" onAction="#goToCustomerReservesSeat" prefHeight="44.0" prefWidth="189.0" text="Reserve Seat">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Button>
+            <Button fx:id="more_Info" layoutX="730.0" layoutY="334.0" mnemonicParsing="false" onAction="#getFlightInformation" prefHeight="25.0" prefWidth="96.0" text="Get More Info">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
